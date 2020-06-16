@@ -8,3 +8,16 @@ chrome.runtime.onInstalled.addListener(function() {
       console.log("The color is green.");
     });
   });
+
+  // {
+//     "name": "Shopping List Extension",
+//     "version": "1.0",
+//     "description": "Build an Extension!",
+//     "background": {
+//         "scripts": [
+//             "background.js"
+//         ],
+//         "persistent": false
+//     },
+//     "manifest_version": 2
+// }
