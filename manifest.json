@@ -2,10 +2,16 @@
     "name": "Getting Started Example",
     "version": "1.0",
     "description": "Build an Extension!",
-    "permissions": ["storage"],
+    "permissions": [ "webRequest", "webRequestBlocking", "webNavigation", "tabs", "\u003Call_urls>" ],
+    "icons": {
+        "128": "slLogo.png"
+     },
     "background": {
-      "scripts": ["background.js"],
-      "persistent": false
+        "scripts": [ "js/jquery-3.3.1.min.js", "js/background.js" ]
     },
+    "content_scripts": [{
+        "js": [ "js/jquery-3.3.1.min.js", "js/content.js" ],
+        "matches": [ "\u003Call_urls>" ]
+    }],
     "manifest_version": 2
   }
