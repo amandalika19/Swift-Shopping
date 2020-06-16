@@ -1,12 +1,24 @@
+// {
+//     "name": "Shopping List Extension",
+//     "version": "1.0",
+//     "description": "Build an Extension!",
+//     "background": {
+//         "scripts": [
+//             "background.js"
+//         ],
+//         "persistent": false
+//     },
+//     "manifest_version": 2
+// }
+
 {
-    "name": "Shopping List Extension",
+    "name": "Getting Started Example",
     "version": "1.0",
     "description": "Build an Extension!",
+    "permissions": ["storage"],
     "background": {
-        "scripts": [
-            "background.js"
-        ],
-        "persistent": false
+      "scripts": ["background.js"],
+      "persistent": false
     },
     "manifest_version": 2
-}
+  }
