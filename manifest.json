@@ -1,21 +1,27 @@
 {
    "background": {
-      "scripts": [ "libs/lodash.js", "scripts/background.js" ]
+      "scripts": [
+         "libs/lodash.js",
+         "scripts/background.js"
+      ]
    },
    "browser_action": {
-      "default_icon": "images/slLogo.png",
+      "default_icon": "slLogo.png",
       "default_popup": "popup.html",
       "default_title": "Add to List!"
    },
-   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
-   "description": "Shopping List",
+   "content_security_policy": "script-src 'self' 'unsafe-eval' https://ajax.googleapis.com https://maxcdn.bootstrapcdn.com; object-src 'self'",
+   "description": "Click the Add Page button to save your favorite item links to access later!",
    "icons": {
-      "128": "images/slLogo.png"
+      "16": "slLogo.png",
+      "48": "slLogo.png",
+      "128": "slLogo.png"
    },
-   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAq8mCTIcFVAIiAqY5j+0aZEA4sjcQ14AkGeA3aXF9rSyvvVkhJYN6bOA4vdxwuciDCWZUKqHzKbdvZ2frvGrPqsYJCssPPkERKKnuMZfjp7UdUHhmnoyl6P4vT3iCDFhqa9MHYCIrTCn4M+HHIt/PLyuiFtWwWzpa5ScjTKpaFPCMeWgP4B7CIlZ99b6EhX3DuQ8XVyN9Xnjj62Ezm//pI4rrT6Kl2Q0bngvqdjb3IG0WY0mlAn9dBSCPoDgLSSa76y/kOEKxIWxUCCvvDwdBfa7BPwA7ghXiavqgP7UpIG1rqRDAphsVjFiq18q2YqHKXXJGkHsKhMkZcBefEXfePwIDAQAB",
    "manifest_version": 2,
-   "name": "Shopping List Extension",
-   "permissions": [ "activeTab", "notifications", "storage", "\u003Call_urls>" ],
-   "update_url": "https://clients2.google.com/service/update2/crx",
-   "version": "1.0"
+   "name": "Swift-Shopping!",
+   "permissions": [
+      "activeTab",
+      "\u003Call_urls>"
+   ],
+   "version": "1.0.3"
 }

@@ -1,6 +1,6 @@
 var savedLinks = [];
 
-var STORAGE_KEY = "ShoppingList:1.0";
+var STORAGE_KEY = "List:1.0";
 
 
 chrome.runtime.onMessage.addListener(
@@ -118,12 +118,7 @@ function openLink(request, sender, sendResponse) {
    chrome.tabs.create({
       url: link.url,
       active: true
-   }, newTabOpened);
-
-   function newTabOpened() {
-      removeLinkById(linkId);
-      commitChanges();
-   }
+   });
 }
 
 function commitChanges() {
@@ -155,7 +150,7 @@ function initBadge() {
       color: [0, 0, 0, 255]
    });
    chrome.browserAction.setTitle({
-      title: 'shopping list!'
+      title: 'Swift-Shopping'
    });
 
    updateLinkCoundBadge();
